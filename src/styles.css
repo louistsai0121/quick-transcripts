@@ -61,6 +61,7 @@
   --input: oklch(0.28 0.04 295 / 80%);
   --ring: oklch(0.62 0.24 292);
   --glow: oklch(0.62 0.24 292 / 35%);
+  --primary-gradient: linear-gradient(92deg, oklch(0.62 0.24 292), oklch(0.66 0.2 262));
 }
 
 @layer base {
@@ -94,4 +95,12 @@
 @utility hero-glow {
   background:
     radial-gradient(ellipse 60% 50% at 50% 0%, var(--glow), transparent 70%);
+}
+
+/* Gradient headline text */
+@utility text-gradient {
+  background-image: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

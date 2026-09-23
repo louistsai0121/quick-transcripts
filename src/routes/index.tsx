@@ -66,19 +66,28 @@ function Index() {
       <section className="hero-glow">
         <div className="mx-auto max-w-6xl px-4 pb-24 pt-20 text-center sm:px-6 sm:pt-28">
           <Reveal>
-            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-              Video Speed Reader
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground sm:text-sm">
+              Video → Transcript
             </p>
-            <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">
-              上傳影片，三分鐘內拿到逐字稿。
+            <h1 className="mt-4 text-5xl font-extrabold leading-tight tracking-tight text-gradient sm:text-7xl">
+              Video Speed Reader
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
+            <p className="mt-6 text-base font-medium sm:text-lg">
+              上傳影片，三分鐘內拿到逐字稿。
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground sm:text-base">
               Upload your video, get a clean transcript in three minutes.
             </p>
-            <div className="mt-10">
+            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
                 to="/auth"
                 className="inline-flex items-center justify-center rounded-xl bg-primary px-8 py-3.5 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-primary/40"
+              >
+                Get started
+              </Link>
+              <Link
+                to="/auth"
+                className="inline-flex items-center justify-center rounded-xl border border-border bg-secondary px-8 py-3.5 text-base font-semibold text-secondary-foreground transition-colors hover:bg-secondary/80"
               >
                 Sign in / 登入
               </Link>
